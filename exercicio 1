@@ -4,24 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lista7
+namespace exercício1
 {
-    class Program
+    class exercício1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("****************** MULTIPLOS DE 7 - 0 Á 1000 ******************");
+            Console.WriteLine("Digite 10 número inteiros:");
+            int num = Convert.ToInt16(Console.ReadLine());
 
-            for(int i = 0; i <= 1000; i++)
+            if (num % 2 == 1)
             {
-                if (i % 7 == 0)
-                {
-                    Console.WriteLine(+ i);
-                }
+                Console.WriteLine("{0}", num);
+            }
+            else if (num % 2 == 0)
+            {
+                Console.WriteLine("{0}", num);
             }
 
             Console.ReadKey();
-
         }
     }
 }
