@@ -4,25 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ex2
+namespace exercício2
 {
     class exercício2
     {
         static void Main(string[] args)
         {
-            int soma = 0;
-
-            Console.WriteLine("******** Número pares entre 85-907 ********");
-
-            for (int i = 85; i <= 907; i++)
+            int n;
+            for (n = 1; n <= 1000; n++)
             {
-                if (i % 2 == 0)
-                {
-                    Console.WriteLine(+i);
-                    soma += i;
-                }
+                Console.WriteLine("{0}",n);
             }
-            Console.WriteLine("A soma de todos eles é:{0}", soma);
+
             Console.ReadKey();
         }
     }
